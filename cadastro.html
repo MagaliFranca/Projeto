@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Produto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start bg-gray-100 text-gray-900 p-6">
+
+  <main class="w-full max-w-lg">
+    <h1 class="text-3xl font-bold mb-6 text-center">Cadastro de Produto</h1>
+
+    <form id="formCadastro"
+      class="bg-white p-6 rounded-lg shadow w-full flex flex-col gap-4"
+      aria-label="Formulário de cadastro de produto">
+      
+      <input type="text" id="nome" placeholder="Nome do produto" required
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <input type="number" id="preco" placeholder="Preço (R$)" required
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <input type="text" id="categoria" placeholder="Categoria" required
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <input type="text" id="origem" placeholder="Origem" required
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <input type="text" id="lote" placeholder="Lote" required
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <input type="date" id="validade" required
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <button type="submit"
+        class="bg-gray-700 text-white py-2 rounded hover:bg-gray-800 transition 
+               focus:outline-none focus:ring-2 focus:ring-blue-500">
+        Salvar Produto
+      </button>
+    </form>
+
+    <a href="lista.html" class="mt-6 inline-block text-blue-600 hover:underline font-semibold">
+      Ver lista de produtos
+    </a>
+  </main>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
+
+

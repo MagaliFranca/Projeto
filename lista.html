@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Produtos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start bg-gray-100 text-gray-900 p-6">
+
+  <main class="w-full max-w-6xl">
+    <h1 class="text-3xl font-bold mb-6 text-center">Produtos Cadastrados</h1>
+
+    <a href="cadastro.html"
+      class="mb-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+      Cadastrar novo produto
+    </a>
+
+    <table class="w-full bg-white shadow rounded-lg overflow-hidden">
+      <thead class="bg-gray-200 text-gray-700">
+        <tr>
+          <th class="px-4 py-2">Nome</th>
+          <th class="px-4 py-2">Preço</th>
+          <th class="px-4 py-2">Categoria</th>
+          <th class="px-4 py-2">Origem</th>
+          <th class="px-4 py-2">Lote</th>
+          <th class="px-4 py-2">Validade</th>
+          <th class="px-4 py-2 text-center">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaProdutos" class="divide-y divide-gray-200"></tbody>
+    </table>
+  </main>
+
+  <script src="js/lista.js"></script>
+</body>
+</html>
+
+
